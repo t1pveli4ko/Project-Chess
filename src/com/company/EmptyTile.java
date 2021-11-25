@@ -1,4 +1,4 @@
-import com.company.ChessTile;
+package com.company;
 
 public abstract class EmptyTile extends ChessTile {
     public EmptyTile(int coordinate){
