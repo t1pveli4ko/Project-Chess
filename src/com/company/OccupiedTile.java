@@ -1,11 +1,11 @@
 package com.company;
 
-public abstract class OccupiedTile extends ChessTile {
-    Piece piece;
+public class OccupiedTile extends ChessTile {
+    private Piece piece;
 
-    public OccupiedTile(int coordinate, Piece piece){
+    protected OccupiedTile(int coordinate, Piece piece) {
         super(coordinate);
-        this.piece=piece;
+        this.piece = piece;
     }
 
     @Override
@@ -14,7 +14,7 @@ public abstract class OccupiedTile extends ChessTile {
     }
 
     @Override
-    public Piece getPiece(){
+    public Piece getPiece() {
         return this.piece;
     }
 }

@@ -1,7 +1,7 @@
 package com.company;
 
-public abstract class EmptyTile extends ChessTile {
-    public EmptyTile(int coordinate){
+public class EmptyTile extends ChessTile {
+    protected EmptyTile(int coordinate) {
         super(coordinate);
     }
 
@@ -11,7 +11,7 @@ public abstract class EmptyTile extends ChessTile {
     }
 
     @Override
-    public Piece getPiece(){
+    public Piece getPiece() {
         return null;
     }
 }
