@@ -1,5 +1,9 @@
 package com.company;
 
+import com.company.EmptyTile;
+import com.company.OccupiedTile;
+import com.company.Piece;
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.List;
+import java.util.Collection;
 
 public abstract class Piece {
     protected int position;
@@ -11,5 +11,9 @@ public abstract class Piece {
         this.pieceColor=pieceColor;
     }
 
-    public abstract List<Move> calculateMoves(ChessBoard board);
+    public PieceColor getPieceColor(){
+        return this.pieceColor;
+    }
+
+    public abstract Collection<Move> calculateMoves(ChessBoard board);
 }
